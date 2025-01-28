@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games - Squid Game Carnival</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+    <audio id="bgm" autoplay loop>
+      <source src="assets/sounds/squid_games_3.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-border"></div>
+
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo">
+          <i class="fas fa-gamepad"></i>
+          <span>Squid Carnival</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+        <section class="game-details">
+            <h2 class="section-title squid-font">Games Overview</h2>
+            <p class="game-description">
+              Welcome to the Squid Game Carnival. Here, you can experience some of the
+              most intense and thrilling games. Choose your game below and test your
+              survival skills!
+            </p>
+          
+            <div class="games-list">
+              <div class="game-item">
+                <h3 class="game-title squid-font">Red Light, Green Light</h3>
+                <p class="game-description">
+                  Move when the light is green, but stop when it turns red. The doll is watching!
+                </p>
+                <a href="red-light-green-light.html"><button class="play-now-btn">Play Now</button></a>
+              </div>
+          
+              <div class="game-item">
+                <h3 class="game-title squid-font">Honeycomb</h3>
+                <p class="game-description">
+                  Carve out the shape from the honeycomb without breaking it. Accuracy is key!
+                </p>
+                <a href="honeycomb.html"><button class="play-now-btn">Play Now</button></a>
+              </div>
+          
+              <div class="game-item">
+                <h3 class="game-title squid-font">Glass Bridge</h3>
+                <p class="game-description">
+                  Cross the glass bridge, but beware—some steps are fragile! Choose wisely.
+                </p>
+                <a href="glass-bridge.html"><button class="play-now-btn">Play Now</button></a>
+              </div>
+          
+              <div class="game-item">
+                <h3 class="game-title squid-font">Marbles</h3>
+                <p class="game-description">
+                  A game of strategy and chance. Outwit your opponent to win!
+                </p>
+                <a href="marbles.html"><button class="play-now-btn">Play Now</button></a>
+              </div>
+          
+              <div class="game-item">
+                <h3 class="game-title squid-font">Tug of War</h3>
+                <p class="game-description">
+                  Pull your way to victory in this strength-based competition.
+                </p>
+                <a href="tug-of-war.html"><button class="play-now-btn">Play Now</button></a>
+              </div>
+          
+              <div class="game-item">
+                <h3 class="game-title squid-font">Squid Game</h3>
+                <p class="game-description">
+                  The ultimate test of strategy and endurance. Can you survive until the end?
+                </p>
+                <a href="squid-game.html"><button class="play-now-btn">Play Now</button></a>
+              </div>
+          
+              <!-- Additional Games (7 to 12) -->
+              <div class="game-item">
+                <h3 class="game-title squid-font">Bungee Jump</h3>
+                <p class="game-description">
+                  A thrilling fall that tests your courage. Will you survive the plunge?
+                </p>
+                <a href="bungee-jump.html"><button class="play-now-btn">Play Now</button></a>
+              </div>
+          
+              <div class="game-item">
+                <h3 class="game-title squid-font">Obstacle Course</h3>
+                <p class="game-description">
+                  Complete the obstacle course in record time. It's more difficult than it looks!
+                </p>
+                <a href="obstacle-course.html"><button class="play-now-btn">Play Now</button></a>
+              </div>
+          
+              <div class="game-item">
+                <h3 class="game-title squid-font">Ladder Climb</h3>
+                <p class="game-description">
+                  Reach the top of the ladder and survive the challenges ahead!
+                </p>
+                <a href="ladder-climb.html"><button class="play-now-btn">Play Now</button></a>
+              </div>
+          
+              <div class="game-item">
+                <h3 class="game-title squid-font">Memory Test</h3>
+                <p class="game-description">
+                  Test your memory and quick thinking to survive!
+                </p>
+                <a href="memory-test.html"><button class="play-now-btn">Play Now</button></a>
+              </div>
+          
+              <div class="game-item">
+                <h3 class="game-title squid-font">Knife Throw</h3>
+                <p class="game-description">
+                  Throw knives at the target and avoid hitting the wrong mark!
+                </p>
+                <a href="knife-throw.html"><button class="play-now-btn">Play Now</button></a>
+              </div>
+          
+              <div class="game-item">
+                <h3 class="game-title squid-font">Maze Escape</h3>
+                <p class="game-description">
+                  Find your way out of the maze before the time runs out.
+                </p>
+                <a href="maze-escape.html"><button class="play-now-btn">Play Now</button></a>
+              </div>
+            </div>
+          </section>
+          
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="squid-font">About Us</h3>
+          <p>
+            Experience the thrill of the Squid Game in a safe virtual
+            environment. Join millions of players worldwide.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3 class="squid-font">Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="squid-font">Contact Info</h3>
+          <p><i class="fas fa-envelope"></i> info@squidgame.com</p>
+          <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3 class="squid-font">Newsletter</h3>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Squid Game. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Squid Game Carnival</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+    <audio id="bgm" autoplay loop>
+      <source src="assets/sounds/squid_games_3.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-border"></div>
+
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo">
+          <i class="fas fa-gamepad"></i>
+          <span>Squid Carnival</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero about-hero">
+        <div class="hero-content">
+          <h1 class="squid-font">About Squid Game Carnival</h1>
+          <p>
+            Enter the immersive world of Squid Game Carnival, where challenges
+            test your wits and endurance in a safe and exciting virtual
+            environment. Inspired by the popular series, we’ve created an
+            unforgettable experience for fans and gamers alike.
+          </p>
+        </div>
+      </section>
+
+      <section class="about-info">
+        <h2 class="section-title squid-font">Our Vision</h2>
+        <p>
+          At Squid Game Carnival, our vision is to provide an engaging and
+          thrilling gaming experience for everyone. We strive to bring people
+          together in a world of creativity, fun, and adventure while honoring
+          the core themes of strategy and teamwork that make Squid Game so
+          compelling.
+        </p>
+      </section>
+
+      <section class="team-section">
+        <h2 class="section-title squid-font">Meet the Team</h2>
+        <div class="team-container">
+          <div class="team-member">
+            <div class="avatar">🎮</div>
+            <h3 class="squid-font">Nandakiran</h3>
+            <p>Game Designer</p>
+          </div>
+          <div class="team-member">
+            <div class="avatar">💻</div>
+            <h3 class="squid-font">Jane Smith</h3>
+            <p>Lead Developer</p>
+          </div>
+          <div class="team-member">
+            <div class="avatar">🎨</div>
+            <h3 class="squid-font">Alice Johnson</h3>
+            <p>Art Director</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="statistics">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number squid-font" data-target="5">0</div>
+            <div class="stat-label">Years in Development</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number squid-font" data-target="100">0</div>
+            <div class="stat-label">Games Created</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number squid-font" data-target="456">0</div>
+            <div class="stat-label">Players Active</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="squid-font">About Us</h3>
+          <p>
+            Experience the thrill of the Squid Game in a safe virtual
+            environment. Join millions of players worldwide.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3 class="squid-font">Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="squid-font">Contact Info</h3>
+          <p><i class="fas fa-envelope"></i> info@squidgame.com</p>
+          <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3 class="squid-font">Newsletter</h3>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Squid Game. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

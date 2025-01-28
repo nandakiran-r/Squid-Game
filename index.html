@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Squid Game Carnival</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="splash-screen">
+      <div class="squid-logo">
+        <div class="triangle"></div>
+        <div class="circle"></div>
+        <div class="square"></div>
+      </div>
+      <div class="loading-text">Loading</div>
+    </div>
+
+    <audio id="bgm" autoplay loop>
+      <source src="assets/sounds/squid_games_3.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-border"></div>
+
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo">
+          <i class="fas fa-gamepad"></i>
+          <span>Squid Carnival</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1 class="squid-font">Squid Game Carnival</h1>
+          <p>456 players, one survivor, ₩45.6 billion prize</p>
+          <div class="hero-buttons">
+            <button class="play-btn" onclick="window.location.href='games.html'">Join Game</button>
+            <button class="learn-btn" onclick="window.location.href='about.html'">Learn More</button>
+          </div>
+          <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll Down</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="games" class="game-cards">
+        <h2 class="section-title squid-font">Featured Games</h2>
+        <div class="cards-container">
+          <div class="card">
+            <div class="card-icon">⭕</div>
+            <h3 class="squid-font">Red Light, Green Light</h3>
+            <p>Don't move when the doll looks!</p>
+            <a href="games.html"><button class="card-btn">Play Now</button></a>
+          </div>
+          <div class="card">
+            <div class="card-icon">🔺</div>
+            <h3 class="squid-font">Honeycomb</h3>
+            <p>Cut the shape without breaking it.</p>
+            <a href="games.html"><button class="card-btn">Play Now</button></a>
+          </div>
+          <div class="card">
+            <div class="card-icon">⬜</div>
+            <h3 class="squid-font">Glass Bridge</h3>
+            <p>Choose your path wisely.</p>
+            <a href="games.html"><button class="card-btn">Play Now</button></a>
+          </div>
+        </div>
+        <a href="games.html"><button class="card-btn" style="margin-top: 30px;">More Games</button></a>
+      </section>
+
+      <section class="statistics">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number squid-font" data-target="456">0</div>
+            <div class="stat-label">Players</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number squid-font" data-target="45.6">0</div>
+            <div class="stat-label">Prize Pool (₩B)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number squid-font" data-target="6">0</div>
+            <div class="stat-label">Games</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number squid-font" data-target="1">0</div>
+            <div class="stat-label">Winner</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery">
+        <h2 class="section-title squid-font">Gallery</h2>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="assets/images/game.aivf.avif" alt="Game 1" />
+            <div class="gallery-overlay">
+              <span class="overlay-text">Red Light, Green Light</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/poster.avif" alt="Game 2" />
+            <div class="gallery-overlay">
+              <span class="overlay-text">Honeycomb</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/bg.jpg" alt="Game 3" />
+            <div class="gallery-overlay">
+              <span class="overlay-text">Glass Bridge</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/red.webp" alt="Game 3" />
+            <div class="gallery-overlay">
+              <span class="overlay-text">Glass Bridge</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/banner.jpg" alt="Game 3" />
+            <div class="gallery-overlay">
+              <span class="overlay-text">Glass Bridge</span>
+            </div>
+          </div>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="squid-font">About Us</h3>
+          <p>
+            Experience the thrill of the Squid Game in a safe virtual
+            environment. Join millions of players worldwide.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3 class="squid-font">Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="squid-font">Contact Info</h3>
+          <p><i class="fas fa-envelope"></i> info@squidgame.com</p>
+          <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3 class="squid-font">Newsletter</h3>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Squid Game. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+      function launchConfetti() {
+        const duration = 5 * 1000; // Duration of the confetti in milliseconds
+        const end = Date.now() + duration;
+
+        (function frame() {
+          confetti({
+            particleCount: 3,
+            angle: 60,
+            spread: 55,
+            origin: { x: 0 },
+          });
+          confetti({
+            particleCount: 3,
+            angle: 120,
+            spread: 55,
+            origin: { x: 1 },
+          });
+
+          if (Date.now() < end) {
+            requestAnimationFrame(frame);
+          }
+        })();
+      }
+
+      // Trigger confetti when the website loads
+      window.onload = launchConfetti;
+    </script>
+  </body>
+</html>
